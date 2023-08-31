@@ -9,7 +9,7 @@ async function createAppStructure() {
     "git clone https://github.com/AlexandreBillereau/chunklab-maker.git",
     (err) => {
       try {
-        fs.cpSync("./chunklab-maker/chunklab-app");
+        fs.cpSync("./chunklab-maker/chunklab-app", "./");
       } catch (err) {
         console.error("Une erreur est survenue :", err);
       }
