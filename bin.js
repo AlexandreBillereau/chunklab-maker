@@ -5,15 +5,16 @@ const { exec } = require("child_process");
 
 async function createAppStructure() {
   // exec("npm install next@latest react@latest react-dom@latest");
-  try {
-    // Créez les répertoires et fichiers nécessaires ici
-    fs.copySync(
-      "C:/Users/14388/WorkSpace/chunklab-maker/npm-package/app",
-      "./"
-    );
-  } catch (err) {
-    console.error("Une erreur est survenue :", err);
-  }
+  exec(
+    "git clone https://github.com/AlexandreBillereau/chunklab-maker.git",
+    (err) => {
+      try {
+        fs.cpSync("./chunklab-maker/chunklab-app");
+      } catch (err) {
+        console.error("Une erreur est survenue :", err);
+      }
+    }
+  );
 }
 
 createAppStructure();
