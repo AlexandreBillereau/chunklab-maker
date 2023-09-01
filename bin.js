@@ -10,6 +10,7 @@ async function createAppStructure() {
       try {
         fs.copySync("./chunklab-maker/chunklab-app/", "./");
         fs.removeSync("./chunklab-maker/");
+        exec("npm i");
       } catch (err) {
         console.error("Une erreur est survenue :", err);
       }
