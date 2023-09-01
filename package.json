@@ -1,6 +1,6 @@
 {
   "name": "chunklab-maker",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "create ecommerce website with nextjs, auth, prisma, tailwind, react all in one",
   "main": "bin.js",
   "scripts": {
