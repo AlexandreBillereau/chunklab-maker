@@ -1,12 +1,12 @@
 {
   "name": "chunklab-maker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "create ecommerce website with nextjs, auth, prisma, tailwind, react all in one",
   "main": "bin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin":"bin.js",
+  "bin": "bin.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexandreBillereau/chunklab-maker.git"
