@@ -49,6 +49,12 @@ async function createAppStructure() {
           }
           loadingbar.stopAndPersist({ symbol: emoji.emojify("✅") });
           console.log(chalk.cyan(stdout));
+          console.log(
+            chalk.green(
+              "\nTo start use the commande : ",
+              chalk.underline("npm run dev")
+            )
+          );
         });
       } catch (err) {
         console.error("An error from clonning :", err);
